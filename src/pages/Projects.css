@@ -1,0 +1,40 @@
+.projects {
+  padding-top: calc(var(--nav-h) + 56px);
+  padding-bottom: 90px;
+  min-height: 100vh;
+}
+
+.projects__head {
+  max-width: 640px;
+  margin-bottom: 48px;
+  animation: rise 0.7s var(--ease-out) both;
+}
+
+.projects__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 5vw, 3.8rem);
+  margin: 6px 0 16px;
+}
+
+.projects__hint {
+  color: var(--muted);
+  margin-top: 16px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.projects__grid .pcard {
+  animation: rise 0.6s var(--ease-out) both;
+}
+
+@media (max-width: 920px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+}

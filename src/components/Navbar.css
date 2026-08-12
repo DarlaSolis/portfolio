@@ -1,0 +1,113 @@
+.nav-wrap {
+  position: fixed;
+  top: 18px;
+  left: 0;
+  right: 0;
+  z-index: 120;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
+}
+
+.nav-wrap--hidden {
+  transform: translateY(-130%);
+  opacity: 0;
+}
+
+.nav {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(18, 7, 12, 0.92);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1.5px solid rgba(255, 46, 77, 0.3);
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.85),
+              0 0 25px rgba(158, 0, 17, 0.35),
+              inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: padding 0.3s var(--ease-out);
+}
+
+.nav__item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-out);
+  white-space: nowrap;
+  outline: none;
+}
+
+.nav__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  transition: transform 0.25s;
+}
+
+.nav__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hidden Label by default (Icons only) */
+.nav__label {
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin-left: 0;
+  transition: max-width 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              opacity 0.25s ease,
+              margin-left 0.25s ease;
+}
+
+/* Hover over navbar or active item reveals text label smoothly! */
+.nav:hover .nav__label,
+.nav__item--active .nav__label {
+  max-width: 120px;
+  opacity: 1;
+  margin-left: 6px;
+}
+
+.nav__item:hover {
+  color: #FFF;
+  background: rgba(255, 46, 77, 0.15);
+  transform: translateY(-1px);
+}
+
+.nav__item:hover .nav__icon {
+  transform: scale(1.15);
+  color: var(--ruby-pink, #FF2E4D);
+}
+
+.nav__item--active {
+  color: #FFF;
+  background: linear-gradient(135deg, var(--accent) 0%, #FF2E4D 100%);
+  box-shadow: 0 4px 14px var(--accent-glow), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.nav__item--active .nav__icon {
+  color: #FFF;
+}
+
+@media (max-width: 720px) {
+  .nav-wrap {
+    top: auto;
+    bottom: 16px;
+  }
+}
