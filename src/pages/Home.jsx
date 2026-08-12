@@ -14,7 +14,7 @@ const Home = () => {
 
         <div className="home__badge">
           <span className="home__badge-dot" />
-          FULLSTACK DEVELOPER
+          DESARROLLADORA FULL STACK
         </div>
 
         <p className="home__bio">

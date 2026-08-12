@@ -72,6 +72,7 @@ export const projects = [
       'Plataforma web para agendar citas, gestionar barberos y controlar ventas en tiempo real',
 
     category: 'Full Stack & Business Automation',
+    categoryGroup: 'Full Stack & Business',
 
     mockUrl: 'barbershop.darla.dev',
 
@@ -125,6 +126,7 @@ export const projects = [
       'Plataforma de seguimiento de salud, vacunas y tareas diarias para mascotas',
 
     category: 'Full Stack & Mobile Web',
+    categoryGroup: 'Full Stack & Business',
 
     mockUrl: 'pettodo.darla.dev',
 
@@ -176,6 +178,7 @@ export const projects = [
       'Plataforma web de experiencia cinematográfica con catálogo, detalle de película y compra de boletos en tiempo real',
 
     category: 'UX/UI Design & Frontend',
+    categoryGroup: 'UX/UI & Frontend',
 
     mockUrl: 'cinepolis.darla.dev',
 
@@ -228,6 +231,7 @@ export const projects = [
       'Sistema de gestión para clínicas dentales desarrollado en Laravel con administración de usuarios, citas y calendario',
 
     category: 'Backend & Dental Practice Management',
+    categoryGroup: 'Backend & ERP',
 
     mockUrl: '',
 
@@ -283,6 +287,7 @@ export const projects = [
       'Sistema POS fullstack para ventas, control de inventario y reportes transaccionales',
 
     category: 'Backend & Retail Systems',
+    categoryGroup: 'Backend & ERP',
 
     mockUrl: '',
 
@@ -336,6 +341,7 @@ export const projects = [
       'Aplicación móvil de comercio electrónico desarrollada en Flutter con diseño reactivo',
 
     category: 'Mobile App & E-Commerce UI',
+    categoryGroup: 'Mobile Apps',
 
     mockUrl: 'donutapp.darla.dev',
 

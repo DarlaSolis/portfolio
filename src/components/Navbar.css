@@ -105,9 +105,43 @@
   color: #FFF;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 768px) {
   .nav-wrap {
     top: auto;
-    bottom: 16px;
+    bottom: 18px;
+    padding: 0 12px;
+  }
+
+  .nav {
+    width: auto;
+    max-width: calc(100vw - 24px);
+    padding: 5px 6px;
+    gap: 2px;
+    justify-content: center;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.9), 0 0 20px rgba(158, 0, 17, 0.4);
+  }
+
+  .nav__item {
+    padding: 8px 10px;
+    font-size: 0.75rem;
+  }
+
+  /* Prevent full navbar expansion on touch hover in mobile */
+  .nav:hover .nav__label {
+    max-width: 0;
+    opacity: 0;
+    margin-left: 0;
+  }
+
+  /* Only expand active item label smoothly on mobile */
+  .nav__item--active .nav__label {
+    max-width: 90px;
+    opacity: 1;
+    margin-left: 5px;
+  }
+
+  .nav__icon {
+    width: 17px;
+    height: 17px;
   }
 }
