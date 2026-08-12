@@ -6,7 +6,7 @@ const Welcome = ({ onFinish }) => {
   const [leaving, setLeaving] = useState(false);
 
   useEffect(() => {
-    const duration = 2200;
+    const duration = 750;
     const start = performance.now();
 
     let raf;
@@ -18,7 +18,7 @@ const Welcome = ({ onFinish }) => {
         raf = requestAnimationFrame(tick);
       } else {
         setLeaving(true);
-        setTimeout(onFinish, 650);
+        setTimeout(onFinish, 250);
       }
     };
     raf = requestAnimationFrame(tick);
