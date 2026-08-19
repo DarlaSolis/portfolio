@@ -8,6 +8,9 @@ import mobileDevicesPdf from '../assets/certifications/UsingComputersandMobileDe
 import ccnaItnPdf from '../assets/certifications/CCNAITNUpdated20260811-20-6ywwt1.pdf';
 
 export const extras = [
+  // ======================================================
+  // 1. AWS (AMAZON WEB SERVICES)
+  // ======================================================
   {
     id: 'aws-cloud-operations',
     title: 'AWS Academy Graduate · Cloud Operations',
@@ -28,6 +31,10 @@ export const extras = [
     credlyBadgeId: '1d0a64a5-d4dd-4c83-a885-74024c2a58e7',
     pdfUrl: awsFoundationsPdf,
   },
+
+  // ======================================================
+  // 2. SCRUM / CERTIPROF
+  // ======================================================
   {
     id: 'scrum-certification',
     title: 'Scrum Foundation Professional Certificate (SFPC)',
@@ -37,6 +44,10 @@ export const extras = [
     description: 'Certificación profesional en metodologías ágiles Scrum, facilitación de roles, sprints y entrega continua de software.',
     pdfUrl: scrumImg,
   },
+
+  // ======================================================
+  // 3. CISCO NETWORKING ACADEMY
+  // ======================================================
   {
     id: 'networking-basics',
     title: 'Networking Basics',
@@ -78,24 +89,6 @@ export const extras = [
     pdfUrl: mobileDevicesPdf,
   },
   {
-    id: 'cisco-badge-8',
-    title: 'Networking Essentials',
-    issuer: 'Cisco Networking Academy',
-    date: '2024',
-    tag: 'Networks & Infrastructure',
-    description: 'Principios de diseño, implementación y operación de redes para entornos corporativos y comunicaciones de datos.',
-    credlyBadgeId: 'dd88b49b-3b0a-4553-b2fb-159f96939a5c',
-  },
-  {
-    id: 'cisco-badge-9',
-    title: 'Cybersecurity Essentials',
-    issuer: 'Cisco Networking Academy',
-    date: '2024',
-    tag: 'Cybersecurity',
-    description: 'Conceptos de ciberseguridad, protección de infraestructura de red, detección de vulnerabilidades y seguridad informática.',
-    credlyBadgeId: 'c187db6e-c17e-4866-8fe4-76dd17df86a6',
-  },
-  {
     id: 'ccna-itn',
     title: 'CCNA: Introduction to Networks (ITN)',
     issuer: 'Cisco Networking Academy',
@@ -105,31 +98,53 @@ export const extras = [
     credlyBadgeId: 'f9ca87ad-41e2-44d7-958e-08da8aab6115',
     pdfUrl: ccnaItnPdf,
   },
+
+  // ======================================================
+  // 4. GOOGLE CLOUD PLATFORM (SKILL BADGES)
+  // ======================================================
   {
-    id: 'cisco-badge-11',
-    title: 'Switching, Routing, and Wireless Essentials',
-    issuer: 'Cisco Networking Academy',
+    id: 'google-cloud-badge-1',
+    title: 'Build a Secure Google Cloud Network',
+    issuer: 'Google Cloud',
     date: '2024',
-    tag: 'Routing & Switching',
-    description: 'Enrutamiento y conmutación de datos en redes LAN/WAN, protocolos de enrutamiento dinámico y seguridad de capa 2.',
-    credlyBadgeId: '21b86d63-ea9c-4923-adf2-a037a69f0c62',
+    tag: 'Cloud Security',
+    description: 'Principios de diseño, implementación y operación de redes seguras en Google Cloud Platform (GCP).',
+    credlyBadgeId: 'dd88b49b-3b0a-4553-b2fb-159f96939a5c',
   },
   {
-    id: 'cisco-badge-12',
-    title: 'Enterprise Networking, Security, and Automation',
-    issuer: 'Cisco Networking Academy',
+    id: 'google-cloud-badge-2',
+    title: 'Google Cloud Computing Foundations Certificate',
+    issuer: 'Google Cloud',
     date: '2024',
-    tag: 'Enterprise Networks',
-    description: 'Arquitectura de redes empresariales, escalabilidad, automatización de redes y conectividad segura a entornos multinube.',
+    tag: 'Cloud Computing',
+    description: 'Fundamentos de infraestructura en Google Cloud: redes, seguridad, balanceo de carga y desarrollo cloud-native.',
+    credlyBadgeId: 'c187db6e-c17e-4866-8fe4-76dd17df86a6',
+  },
+  {
+    id: 'google-cloud-badge-3',
+    title: 'Set Up an App Dev Environment',
+    issuer: 'Google Cloud',
+    date: '2024',
+    tag: 'Cloud DevOps',
+    description: 'Configuración de entornos de desarrollo cloud, gestión IAM, Cloud Storage, Cloud Functions y Pub/Sub.',
     credlyBadgeId: '8f62d8cb-d847-481b-8c06-d84607160acf',
   },
   {
-    id: 'cisco-badge-13',
-    title: 'IT Essentials & Technical Support',
-    issuer: 'Cisco Networking Academy',
+    id: 'google-cloud-badge-4',
+    title: 'Prepare Data for ML APIs on Google Cloud',
+    issuer: 'Google Cloud',
     date: '2024',
-    tag: 'IT Support & Systems',
-    description: 'Soporte técnico avanzado en TI, solución de problemas informáticos, mantenimiento preventivo y servicio al cliente.',
+    tag: 'ML & Data Engineering',
+    description: 'Procesamiento y preparación de datos con Dataprep, Dataflow, Dataproc e integración con APIs de Machine Learning.',
+    credlyBadgeId: '21b86d63-ea9c-4923-adf2-a037a69f0c62',
+  },
+  {
+    id: 'google-cloud-badge-5',
+    title: 'Implement Load Balancing',
+    issuer: 'Google Cloud',
+    date: '2024',
+    tag: 'Cloud & DevOps',
+    description: 'Gestión de infraestructura en Compute Engine y GKE, uso de Cloud Shell/gcloud, despliegue de contenedores y configuración de balanceadores de carga HTTP y de red.',
     credlyBadgeId: '792e7229-3532-491c-a414-ed6f8c18fae2',
   },
 ];
