@@ -58,6 +58,49 @@ const donutImages = Object.values(
 // ======================================================
 
 export const projects = [
+  // ====================================================
+  // 0. TRAVEL MANAGEMENT API (JAVA / SPRING BOOT)
+  // ====================================================
+  {
+    id: 'travel-management-api',
+    name: 'Travel Management API · Enterprise Java Backend',
+    tagline: 'API REST empresarial para la gestión de itinerarios, reservas de viajes y autenticación segura con JWT',
+    category: 'Backend & Enterprise Java',
+    categoryGroup: 'Backend & ERP',
+    mockUrl: 'api.travel.darla.dev',
+    startDate: '2026',
+    endDate: '2026',
+    duration: 'Proyecto Backend / Java Ecosystem',
+    year: '2026',
+    role: 'Backend Developer (Java / Spring)',
+    summary:
+      'Sistema Backend desacoplado en Java 17 y Spring Boot 3 diseñado para la gestión integral de itinerarios corporativos, reservas de viajes, catálogos de destinos y control de usuarios con autenticación basada en JWT y persistencia relacional.',
+    keyFeatures: [
+      'Arquitectura de capas en Spring Boot 3 (Controller, Service, Repository) con separación de responsabilidades y DTOs.',
+      'Seguridad y autenticación Stateless implementada con Spring Security y tokens JWT con roles diferidos.',
+      'Persistencia eficiente mediante Spring Data JPA e Hibernate sobre PostgreSQL con soporte para transacciones relacionales.',
+      'Contenerización completa con Docker y Docker Compose para despliegues reproducibles en entornos de desarrollo y staging.',
+      'Endpoints REST documentados con OpenAPI / Swagger para integración limpia con clientes frontend y móviles.',
+    ],
+    cover: barberShopImages[0], // fallback or clean cover image
+    images: barberShopImages,
+    tech: [
+      'Java 17',
+      'Spring Boot 3',
+      'Spring Data JPA',
+      'Hibernate',
+      'Spring Security',
+      'JWT',
+      'PostgreSQL',
+      'REST APIs',
+      'Docker',
+      'Git',
+    ],
+    links: {
+      repo: 'https://github.com/DarlaSolis/travel-management-api',
+      demo: '',
+    },
+  },
 
   // ====================================================
   // 1. BARBERSHOP

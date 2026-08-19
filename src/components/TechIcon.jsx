@@ -324,6 +324,56 @@ function GoogleCloudIcon() {
   );
 }
 
+function LinuxIcon() {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2">
+      <path d="M16 4c-5 0-7 4-7 9 0 3 1 6 3 9-2 1-4 3-4 5 0 2 4 2 8 2s8 0 8-2c0-2-2-4-4-5 2-3 3-6 3-9 0-5-2-9-7-9z" />
+      <circle cx="13" cy="11" r="1.5" fill="currentColor" />
+      <circle cx="19" cy="11" r="1.5" fill="currentColor" />
+      <path d="M14 16c1 1 3 1 4 0" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function FastApiIcon() {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2">
+      <circle cx="16" cy="16" r="11" />
+      <path d="M17 7l-7 10h7l-1 8 8-11h-7l1-7z" strokeLinejoin="round" fill="currentColor" opacity="0.2" />
+      <path d="M17 7l-7 10h7l-1 8 8-11h-7l1-7z" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function SecurityIcon() {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2">
+      <path d="M16 4l10 4v8c0 7-5 12-10 14C11 28 6 23 6 16V8l10-4z" fill="currentColor" opacity="0.15" />
+      <path d="M16 4l10 4v8c0 7-5 12-10 14C11 28 6 23 6 16V8l10-4z" strokeLinejoin="round" />
+      <path d="M12 15l3 3 5-5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function SqlIcon() {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2">
+      <path d="M6 10c0-2.2 4.5-4 10-4s10 1.8 10 4-4.5 4-10 4-10-1.8-10-4z" fill="currentColor" opacity="0.2" />
+      <path d="M6 10c0-2.2 4.5-4 10-4s10 1.8 10 4-4.5 4-10 4-10-1.8-10-4z" />
+      <path d="M6 10v6c0 2.2 4.5 4 10 4s10-1.8 10-4v-6M6 16v6c0 2.2 4.5 4 10 4s10-1.8 10-4v-6" />
+    </svg>
+  );
+}
+
+function CodeBoxIcon() {
+  return (
+    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2">
+      <rect x="5" y="6" width="22" height="20" rx="3" strokeLinejoin="round" />
+      <path d="M11 13l-4 3 4 3M21 13l4 3-4 3M17 12l-2 8" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 function DefaultIcon() {
   return (
     <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="2">
@@ -338,11 +388,22 @@ const iconMap = {
   JavaScript: JsIcon,
   Python: PythonIcon,
   Java: JavaIcon,
+  'Java 17': JavaIcon,
   Dart: DartIcon,
   'Spring Boot': SpringIcon,
+  'Spring Boot 3': SpringIcon,
+  'Spring Data JPA': SpringIcon,
+  Hibernate: SpringIcon,
+  'Spring Security': SecurityIcon,
+  JWT: SecurityIcon,
+  FastAPI: FastApiIcon,
   MySQL: DatabaseIcon,
   PostgreSQL: DatabaseIcon,
+  'SQL Server': SqlIcon,
+  SQL: SqlIcon,
   Docker: DockerIcon,
+  'Docker Compose': DockerIcon,
+  Linux: LinuxIcon,
   'AWS (Fundamentos)': AwsIcon,
   'AWS (Fundamentals)': AwsIcon,
   AWS: AwsIcon,
@@ -351,8 +412,15 @@ const iconMap = {
   'REST APIs': ApiIcon,
   Figma: FigmaIcon,
   Odoo: OdooIcon,
+  'Odoo 19 Enterprise': OdooIcon,
+  ORM: CodeBoxIcon,
+  XML: CodeBoxIcon,
+  QWeb: CodeBoxIcon,
+  'Programación Orientada a Objetos': CodeBoxIcon,
+  POO: CodeBoxIcon,
   'Canvas API': CanvasIcon,
   Scrum: ScrumIcon,
+  Agile: ScrumIcon,
   Bash: BashIcon,
   Flutter: FlutterIcon,
   Laravel: LaravelIcon,
@@ -372,4 +440,6 @@ const iconMap = {
   'Google Cloud': GoogleCloudIcon,
   'Google Cloud (Fundamentals)': GoogleCloudIcon,
   GCP: GoogleCloudIcon,
+  JSON: CodeBoxIcon,
 };
+

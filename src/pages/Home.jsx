@@ -14,15 +14,15 @@ const Home = () => {
 
         <div className="home__badge">
           <span className="home__badge-dot" />
-          DESARROLLADORA FULL STACK
+          BACKEND DEVELOPER
         </div>
 
         <p className="home__bio">
-          Desarrolladora de software especializada en <strong>backend (Python, Java, Odoo 19 Enterprise, REST APIs, PostgreSQL, MySQL)</strong> y desarrollo frontend con <strong>React</strong>. Experiencia en infraestructura en la nube <strong>(AWS & GCP)</strong>, metodologías ágiles <strong>(Scrum)</strong> y arquitectura de software.
+          Desarrolladora Backend con experiencia en desarrollo y mantenimiento de soluciones empresariales, integración de APIs, bases de datos y personalización de sistemas ERP mediante <strong>Python y Odoo</strong>. Con conocimientos en <strong>Java, POO, REST APIs, PostgreSQL</strong> y entornos <strong>Linux</strong>, además de experiencia en depuración, pruebas, resolución de incidencias y soporte a usuarios finales.
         </p>
 
         <div className="home__actions">
-          <a className="btn btn--primary" href="/cv-darla-solis.pdf" download>
+          <a className="btn btn--primary" href="/cv-darla-solis-es.pdf" download>
             <DownloadIcon /> Descargar CV Completo
           </a>
           <div className="home__socials">
