@@ -52,6 +52,15 @@ const donutImages = Object.values(
   })
 );
 
+const marketAppImages = Object.values(
+  import.meta.glob('../assets/projects/marketApp/*.{png,jpg,jpeg,gif,webp}', {
+    eager: true,
+    query: '?url',
+    import: 'default',
+  })
+);
+
+
 
 // ======================================================
 // PROYECTOS
@@ -374,6 +383,63 @@ export const projects = [
 
     links: {
       repo: 'https://github.com/DarlaSolis/donut_app_2c_solis',
+      demo: '',
+    },
+  },
+
+  // ====================================================
+  // 7. MARKET APP API
+  // ====================================================
+  {
+    id: 'market-app',
+
+    name: 'MarketApp API · REST Backend & Supermarket System',
+
+    tagline:
+      'API REST robusta desarrollada en Java 17 y Spring Boot 3 con Arquitectura Limpia para gestión de productos, compras y autenticación',
+
+    category: 'Backend & REST API',
+    categoryGroup: 'Backend & ERP',
+
+    mockUrl: 'marketapp.darla.dev',
+
+    startDate: '2025',
+    endDate: '2025',
+    duration: 'Backend / Spring Boot Architecture',
+    year: '2025',
+
+    role: 'Backend Developer (Java & Spring Boot)',
+
+    summary:
+      'API REST enterprise para la gestión de supermercado/e-commerce construida con Java 17 y Spring Boot 3 siguiendo la Arquitectura Limpia (Hexagonal). Incluye control transaccional de compras, catálogo de productos con mapeo DTO mediante MapStruct, autenticación de usuarios y documentación interactiva con Swagger UI / OpenAPI.',
+
+    keyFeatures: [
+      'Arquitectura Limpia desacoplada en capas: Dominio, Persistencia y Controllers Web.',
+      'Seguridad y autenticación mediante JWT (JSON Web Tokens) y Spring Security.',
+      'Gestión de productos con filtros por categoría, disponibilidad de stock y operaciones CRUD.',
+      'Módulo de procesamiento transaccional de compras y registro de pedidos de clientes.',
+      'Mapeo entre Entidades JPA y objetos DTO optimizado mediante MapStruct.',
+      'Documentación interactiva de la API integrada con Swagger UI / OpenAPI 3.',
+    ],
+
+    cover: marketAppImages[0],
+
+    images: marketAppImages,
+
+    tech: [
+      'Java 17',
+      'Spring Boot 3',
+      'Spring Data JPA',
+      'Spring Security',
+      'JWT',
+      'MapStruct',
+      'Swagger / OpenAPI',
+      'Gradle',
+      'Git',
+    ],
+
+    links: {
+      repo: 'https://github.com/DarlaSolis/market-app',
       demo: '',
     },
   },
